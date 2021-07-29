@@ -13,8 +13,8 @@ jobs:
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
         Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/start.bat?token=AU4Y64JUQB776XENJNFOHV3BAKKWO -OutFile start.bat
-        Invoke-WebRequest  -OutFile wallpaper.jpg
-        Invoke-WebRequest https://github.com/UnnoBear347/Free-RDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/wallpaper.jpg?token=AU4Y64NNDVYZNFQTDX4V7PDBAKKDQ -OutFile wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/wallpaper.bat?token=AU4Y64ICI2JFQIWXZHMK2SDBAKL3Y -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
@@ -26,8 +26,8 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
         Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
-        copy Wallpaper.jpg D:\a\Wallpaper.jpg
-        copy Wallpaper.bat D:\a\Wallpaper.bat
+        copy Wallpaper.jpg D:\a\wallpaper.jpg
+        copy Wallpaper.bat D:\a\wallpaper.bat
     - name: Creating Tunnel.
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Connecting to your RDP.
