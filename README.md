@@ -1,4 +1,4 @@
-Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
+Tutorial dapat RDP 2 Core 7 GB Ram 255 SSD
 
 1.Login / SignUp NGROK,Link : https://dashboard.ngrok.com/get-started/setup
 
@@ -12,7 +12,7 @@ Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
 
 6.lalu pergi ke Actions -> FreeRDP -> Run workflow -> FreeRDP -> build
 
-Selesai !! Kalian bisa login menggunakan IP,Username dan Password disitu
+Kalian bisa login RDP menggunakan IP,Username dan Password disitu
 
 Username : administrator
 
