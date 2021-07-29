@@ -10,4 +10,6 @@ Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
 
 5. Tulis NGROK_TOKEN pada bagian Name dan Paste Authtoken kalian pada bagian Value
 
-6. lalu pergi ke Actions -> FreeRDP -> Run Workflow
+6. lalu pergi ke Actions -> FreeRDP -> Run workflow
+
+7. 
