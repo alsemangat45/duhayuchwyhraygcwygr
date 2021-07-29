@@ -1,0 +1,38 @@
+name: FreeRDP
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 99999
+
+    steps:
+    - name: Downloading NGROK.
+      run: |
+        Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
+        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/Gar2007.bat -OutFile Gar2007.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/wallpaper.png -OutFile wallpaper.bmp
+        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/wallpaper.bat -OutFile wallpaper.bat
+    - name: Extracting NGROK
+      run: Expand-Archive ngrok.zip
+    - name: Connecting To NGROK
+      run: .\ngrok\ngrok.exe authtoken $Env:NGROK_TOKEN
+      env:
+        NGROK_TOKEN: ${{ secrets.NGROK_TOKEN }}
+    - name: Installing RDP
+      run: | 
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server'-name "fDenyTSConnections" -Value 0
+        Enable-NetFirewallRule -DisplayGroup "Remote Desktop"
+        Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
+        copy wallpaper.bmp D:\a\wallpaper.bmp
+        copy wallpaper.bat D:\a\wallpaper.bat
+    - name: Creating Tunnel
+      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
+    - name: Connecting To RDP
+      run: cmd /c Gar2007.bat
+    - name: Install Success RDP Sekarang Bisa Di Akses Selamat Mencoba! By Gar2007@Dark Skeleton Team
+      run: | 
+        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/loop.ps1 -OutFile loop.ps1
+        ./loop.ps1
