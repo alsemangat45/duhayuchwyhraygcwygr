@@ -10,6 +10,9 @@ Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
 
 5. Tulis NGROK_TOKEN pada bagian Name dan Paste Authtoken kalian pada bagian Value
 
-6. lalu pergi ke Actions -> FreeRDP -> Run workflow
+6. lalu pergi ke Actions -> FreeRDP -> Run workflow -> FreeRDP -> build
 
-7. 
+Selesai !! Kalian bisa login menggunakan IP,Username dan Password disitu
+
+Username : administrator
+Password : @UnnoBear
