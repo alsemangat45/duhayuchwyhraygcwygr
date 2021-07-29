@@ -7,3 +7,7 @@ Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
 3. Click Fork di ujung atas kanan (Bagi yang menggunakan Android / SmartPhone bisa memakai Situs Desktop)
 
 4. Pilih bagian Settings -> Secrets -> New repository secret
+
+5. Tulis NGROK_TOKEN pada bagian Name dan Paste Authtoken kalian pada bagian Value
+
+6. 
