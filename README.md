@@ -15,4 +15,5 @@ Tutorial dapet RDP 2 Core 7 GB Ram 255 SSD
 Selesai !! Kalian bisa login menggunakan IP,Username dan Password disitu
 
 Username : administrator
+
 Password : @UnnoBear
