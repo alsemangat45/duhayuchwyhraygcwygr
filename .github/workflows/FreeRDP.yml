@@ -12,7 +12,7 @@ jobs:
     - name: Downloading NGROK.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/Gar2007.bat -OutFile Gar2007.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/Gar2007.bat -OutFile UnnoBear.bat
         Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/wallpaper.png -OutFile wallpaper.bmp
         Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting NGROK
@@ -31,7 +31,7 @@ jobs:
     - name: Creating Tunnel
       run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
     - name: Connecting To RDP
-      run: cmd /c Gar2007.bat
+      run: cmd /c UnnoBear.bat
     - name: Install Success !!
       run: | 
         Invoke-WebRequest https://raw.githubusercontent.com/Gar2007/FREE-RDP/main/loop.ps1 -OutFile loop.ps1
