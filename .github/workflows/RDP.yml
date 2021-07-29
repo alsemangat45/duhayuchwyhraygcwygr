@@ -12,9 +12,9 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/start.bat -OutFile Start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/wallpaper.jpg -OutFile Wallpaper.jpg
-        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/Free-RDP/main/wallpaper.bat -OutFile Wallpaper.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/RDP/main/start.bat -OutFile Start.bat
+        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/RDP/main/wallpaper.jpg -OutFile Wallpaper.jpg
+        Invoke-WebRequest https://raw.githubusercontent.com/UnnoBear347/RDP/main/wallpaper.bat -OutFile Wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
