@@ -1,2 +1,0 @@
-# RDP-Sendiri
-RDP Private
