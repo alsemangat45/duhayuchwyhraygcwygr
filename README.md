@@ -9,7 +9,7 @@ Buat RDP Windows Ram 7 GB 2 Core CPU 255 SSD Dengan Github:
 + Tekan Add secret
 + Pergi Ke Action> Select workflow > FreeRDP > Run workflow
 + Refresh Web dan masuk ke FreeRDP > build
-+ Tekan Tombol panah menghadap ke bawah "RDP INFO LOGIN" Untuk Mendapatkan IP, User, Password.
++ Tekan Tombol panah menghadap ke bawah "Connect ke RDP kamu" Untuk Mendapatkan IP, User, Password.
 + Login Ke RDP.
 + Tunggu Beberapa Menit.
 + Tekan Agree.
