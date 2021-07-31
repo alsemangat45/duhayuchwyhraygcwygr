@@ -1,7 +1,7 @@
 # RDP Windows Gratis 6 Jam
 
 Buat RDP Windows Ram 7 GB 2 Core CPU 255 SSD Dengan Github:
-+ Tekan Tombol Fork untuk membuat RDP (Bagi Pengguna Android/HP Disilahkan Pake Mode Desktop).
++ Tekan Tombol Fork untuk membuat RDP (Bagi Pengguna Android / HP Disilahkan Pake Mode Desktop).
 + Kunjungi https://dashboard.ngrok.com untuk mendapatkan NGROK_AUTH_TOKEN
 + Di Dalam Repo ini Pergi ke Settings> Secrets> New repository secret
 + Isi Nama: Masukan NGROK_AUTH_TOKEN
